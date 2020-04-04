@@ -8,6 +8,8 @@ let myLength = function (){
 
 let myPush = function(elm){
     this[this.myLength()] = elm
+
+    return this
 }
 
 let myRevers = function(){
@@ -21,12 +23,15 @@ let myRevers = function(){
         this[this.myLength() - i - 1] = tmp1
         i++
     }
+
+    return this
 }
 
 String.prototype.myLength = myLength
 Array.prototype.myLength = myLength
 Array.prototype.myPush = myPush
 Array.prototype.myRevers = myRevers
+
 
 /**
  * prend une chaine de binaire constituer de 0 et de 1 en argument
@@ -51,10 +56,10 @@ class convertBinaireenDecimal{
     addByts(){
         let i = 1;
         while (i < this.NBbyts - 1) {
-            this.arByts.push(this.arByts[i] + this.arByts[i])
+            this.arByts.myPush(this.arByts[i] + this.arByts[i])
             i++
         }
-        this.arByts.reverse()
+        this.arByts.myRevers()
     }
     convert(){
         let i = 0;
@@ -66,6 +71,8 @@ class convertBinaireenDecimal{
         }
     }
 }
+
+//console.log(new convertBinaireenDecimal('101010'))
 
 /**
  * prend un int en argument
@@ -84,13 +91,13 @@ class convertDecimalEnBinaire{
         let i = 0;
         while (this.arByts[i] <= this.decimal) {
             if(this.arByts[i] + this.arByts[i] <= this.decimal){
-                this.arByts.push(this.arByts[i] + this.arByts[i])
+                this.arByts.myPush(this.arByts[i] + this.arByts[i])
             }else{
                 break
             }
             i++
         }
-        this.arByts.reverse()
+        this.arByts.myRevers()
     }
     convert(){
         let i = 0
@@ -108,9 +115,4 @@ class convertDecimalEnBinaire{
     }
 }
 
-//let i = 512
-//while (i >= 0) {
-//    var a = new convertDecimalEnBinaire(i)
-//    console.log(a['binaire'])
-//    i--
-//}
+console.log(new convertDecimalEnBinaire(42))
