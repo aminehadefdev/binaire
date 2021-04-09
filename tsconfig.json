@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "pretty": true,
+        "outDir": "./build",
+        "watch": true,
+    },
+    "include": ["./lib/**/*"],
+    "exclude": ["node_modules"]
+}
