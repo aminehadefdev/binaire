@@ -17,8 +17,5 @@
     "url": "https://github.com/aminehadefdev/binaire/issues"
   },
   "homepage": "https://github.com/aminehadefdev/binaire#readme",
-  "dependencies": {
-    "chai": "^4.3.4",
-    "mocha": "^8.3.2"
-  }
+  "dependencies": {}
 }

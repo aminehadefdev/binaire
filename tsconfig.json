@@ -2,9 +2,8 @@
     "compilerOptions": {
         "target": "ES5",
         "pretty": true,
-        "outDir": "./build",
+        "outDir": "build",
         "watch": true,
     },
-    "include": ["./lib/**/*"],
-    "exclude": ["node_modules"]
+    "exclude": ["node_modules","lib/interfaces"]
 }

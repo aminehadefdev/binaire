@@ -1,4 +1,4 @@
-import ConvertedBinaryToDecimaInterface from './interfaces/ConvertedBinaryToDecimaInterface'
+import ConvertedBinaryToDecimaInterface from './interfaces/ConvertedBinaryToDecimaInterface.interface'
 
 class ConvertedBinaryToDecima{
     private decimal:number
