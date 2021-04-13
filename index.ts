@@ -7,9 +7,9 @@ interface ConvertedBinaryToDecimaInterface{
     binary: string
 }
 
-function init(str: string) : ConvertedBinaryToDecimaInterface{
+function covert(str: string) : ConvertedBinaryToDecimaInterface{
     var cbtd = new ConvertedBinaryToDecima(str)
     return cbtd.convert()
 }
 
-export default init
+export default covert

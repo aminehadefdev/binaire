@@ -1,9 +1,9 @@
-import init from "../index"
+import covert from "../index"
 import {expect} from "chai"
 
 describe('init', ()=>{
     it('should return obj decimal 0', ()=>{
-        expect(init('0')).to.eql({
+        expect(covert('0')).to.eql({
             decimal: 0,
             NBbyts: 1,
             arrByts: [1],
@@ -11,7 +11,7 @@ describe('init', ()=>{
         })
     })
     it('should return obj decimal 1', ()=>{
-        expect(init('1')).to.eql({
+        expect(covert('1')).to.eql({
             decimal: 1,
             NBbyts: 1,
             arrByts: [1],
@@ -19,7 +19,7 @@ describe('init', ()=>{
         })
     })
     it('should return obj decimal 42', ()=>{
-        expect(init('101010')).to.eql({
+        expect(covert('101010')).to.eql({
             decimal: 42,
             NBbyts: 6,
             arrByts: [32 ,16, 8, 4, 2, 1],
@@ -27,7 +27,7 @@ describe('init', ()=>{
         })
     })
     it('should return obj decimal 54326', ()=>{
-        expect(init('1101010000110110')).to.eql({
+        expect(covert('1101010000110110')).to.eql({
             decimal: 54326,
             NBbyts: 16,
             arrByts: [32768,16384,8192,4096,2048,1024,512,256,128,64,32,16,8,4,2,1],
