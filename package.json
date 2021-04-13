@@ -4,8 +4,9 @@
   "description": "test",
   "main": "binaire.js",
   "scripts": {
-    "start": "tsc",
-    "test": "./node_modules/.bin/mocha"
+    "start": "",
+    "build": "tsc",
+    "test": "mocha --require ts-node/register --watch-extentions ts 'test/**/*.ts'"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,13 @@
     "url": "https://github.com/aminehadefdev/binaire/issues"
   },
   "homepage": "https://github.com/aminehadefdev/binaire#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^4.2.16",
+    "@types/mocha": "^8.2.2",
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  }
 }
