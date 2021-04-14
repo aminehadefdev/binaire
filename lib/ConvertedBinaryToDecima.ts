@@ -1,9 +1,5 @@
-interface ConvertedBinaryToDecimaInterface{
-    decimal: number,
-    NBbyts: number,
-    arrByts: Array<number>,
-    binary: string
-}
+import ConvertedInterface from './interface/ConvertedInterface'
+
 class ConvertedBinaryToDecima{
     private decimal:number
     private NBbyts:number
@@ -27,7 +23,7 @@ class ConvertedBinaryToDecima{
             this.NBbyts = this.arByts.length
         }
     }
-    public convert(): ConvertedBinaryToDecimaInterface{
+    public convert(): ConvertedInterface{
         if(this.binary !== "0" && this.binary !== "1"){
             let i = 0;
             while (i < this.NBbyts){
