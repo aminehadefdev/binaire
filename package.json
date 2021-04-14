@@ -5,7 +5,7 @@
   "main": "binaire.js",
   "scripts": {
     "start": "",
-    "build": "tsc",
+    "build": "cd binary && npm unlink && npm link && cd .. && tsc",
     "test": "mocha --require ts-node/register --watch-extentions ts 'test/**/*.ts'"
   },
   "repository": {
@@ -22,6 +22,7 @@
   "devDependencies": {
     "@types/chai": "^4.2.16",
     "@types/mocha": "^8.2.2",
+    "@types/node": "^14.14.39",
     "chai": "^4.3.4",
     "mocha": "^8.3.2",
     "ts-node": "^9.1.1",
