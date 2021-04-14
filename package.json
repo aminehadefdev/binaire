@@ -5,7 +5,7 @@
   "main": "binaire.js",
   "scripts": {
     "start": "",
-    "build": "cd binary && npm unlink && npm link && cd .. && tsc",
+    "build": "tsc",
     "test": "mocha --require ts-node/register --watch-extentions ts 'test/**/*.ts'"
   },
   "repository": {
