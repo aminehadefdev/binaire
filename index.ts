@@ -15,4 +15,4 @@ const converter = {
     }
 }
 
-export default converter
+module.exports = converter
