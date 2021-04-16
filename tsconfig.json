@@ -6,6 +6,6 @@
         "outDir": "binary",
         "watch": true
     },
-    "include": ["index.ts", "bin/*"],
+    "include": ["index.ts", "bin/**/*"],
     "exclude": ["./node_modules", "test"]
 }

@@ -102,3 +102,7 @@ describe('ConvertedDecimalToBinary decimal to binary', ()=>{
         })
     })
 })
+
+describe('ConvertedStringToBinary decimal to binary', ()=>{
+    
+})
